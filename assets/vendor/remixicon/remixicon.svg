@@ -15,7 +15,7 @@
   <font id="remixicon" horiz-adv-x="1200">
     <font-face font-family="remixicon"
       units-per-em="1200" ascent="1200"
-      descent="0" />
+      descent="0"; />
     <missing-glyph horiz-adv-x="0" />
     <glyph glyph-name="24-hours-fill"
       unicode="&#xEA01;"
