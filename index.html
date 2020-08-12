@@ -4,9 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Hasham Rasheed</title>
-  <meta content="Hasham Rasheed's Portfolio Website" name="descriptison">
+  <meta content="Hasham Rasheed's Portfolio Website" name="description">
   <meta content="Software Engineering
 Python
 Software Development
@@ -19,6 +17,8 @@ JavaScript
 Django
 React
 Web-Development" name="keywords">
+  <title>Hasham Rasheed</title>
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.ico" alt="" rel="icon">
@@ -34,7 +34,7 @@ Web-Development" name="keywords">
   <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-
+  <link rel="manifest" href="manifest.webmanifest">
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -144,7 +144,7 @@ Web-Development" name="keywords">
         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
           <div class="count-box">
             <i><img src="https://img.icons8.com/color/48/000000/postgreesql.png" alt=""/></i>
-            <span>PostgreSQL</span>
+            <span>PostgresSQL</span>
           </div>
         </div>
 
@@ -433,7 +433,7 @@ Web-Development" name="keywords">
       <form action="https://formspree.io/xoqkyogv" method="POST" role="form" id="frm" class="php-email-form mt-4" onsubmit="resetForm()" >
         <div class="form-row"> 
           <div class="col-md-6 form-group">
-            <label for="_replyto">Email</label>
+            <label for="email">Email</label>
             <input type="text" class="form-control" name="_replyto" id="email" placeholder="Your Email" required>
           </div>
         </div>
@@ -467,6 +467,15 @@ Web-Development" name="keywords">
 
 
   <script src="assets/js/main.js"></script>
+  <script>
+    // Check that service workers are supported
+    if ('serviceWorker' in navigator) {
+      // Use the window load event to keep the page load performant
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js');
+      });
+    }
+    </script>
 <script src="jquery.particleground.min.js"></script>
 
 <script>$(document).ready(function() {
