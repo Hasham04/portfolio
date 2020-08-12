@@ -10,7 +10,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: linear-gradient(315deg, #0000 35%, #1f1e1e 35%);
+  background: linear-gradient(315deg, #0000 36%, #1f1e1e 36%);
   background-size: cover;
   left: 0;
   right: 0;
