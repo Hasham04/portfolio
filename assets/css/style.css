@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .social-links {
   margin-top: 40px;
-  display: flex;
+  display:inline-flex;
 }
 
 #header .social-links a {
@@ -174,6 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Desktop Navigation */
 .nav-menu {
   margin-top: 35px;
+  text-align:center
 }
 
 .nav-menu ul {
@@ -181,6 +182,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: inline-flex;
 }
 
 .nav-menu li + li {
